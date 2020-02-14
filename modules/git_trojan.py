@@ -25,6 +25,7 @@ def connect_to_github():
     passwd = raw_input("input your password:")
     print passwd
     gh = login('overoptimus', passwd)
+
     repo = gh.repository('overoptimus', 'trojan')
     branch = repo.branch('master')
 
